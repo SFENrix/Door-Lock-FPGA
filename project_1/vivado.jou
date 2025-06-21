@@ -1,0 +1,220 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jan  7 13:37:50 2025
+# Process ID         : 5608
+# Current directory  : C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent17756 C:\Users\TUF\Desktop\Kuliah\SEM 3\DIG SYS\TR2\project_1\project_1.xpr
+# Log file           : C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/vivado.log
+# Journal file       : C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1\vivado.jou
+# Running On         : FENRIR
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11370H @ 3.30GHz
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16854 MB
+# Swap memory        : 10792 MB
+# Total Virtual      : 27646 MB
+# Available Virtual  : 13188 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/debouncer.vhd} w ]
+add_files {{C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/debouncer.vhd}}
+close [ open {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/clock_divider.vhd} w ]
+add_files {{C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/clock_divider.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close [ open {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/7seg_disp.vhd} w ]
+add_files {{C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/7seg_disp.vhd}}
+update_compile_order -fileset sources_1
+close_hw_manager
+remove_files  {{C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/7seg_disp.vhd}}
+close [ open {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/sevseg_disp.vhd} w ]
+add_files {{C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/sevseg_disp.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+refresh_design
+place_ports clk E3
+save_constraints
+close_project
+open_project {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_project
+open_project {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+place_ports enter_btn M17
+place_ports override M18
+place_ports reset_btn P18
+set_property package_pin "" [get_ports [list  {digits[7]}]]
+set_property package_pin "" [get_ports [list  {digits[6]}]]
+place_ports {digits[7]} U13
+place_ports {digits[6]} K2
+place_ports {digits[5]} T14
+place_ports {digits[4]} P14
+place_ports {digits[3]} J14
+place_ports {digits[2]} T9
+place_ports {digits[1]} J18
+place_ports {digits[0]} J17
+set_property package_pin "" [get_ports [list  {segments[5]}]]
+place_ports {segments[6]} L18
+place_ports {segments[5]} T11
+place_ports {segments[4]} P15
+place_ports {segments[3]} K13
+place_ports {segments[2]} K16
+place_ports {segments[1]} R10
+place_ports {segments[0]} T10
+place_ports {switches[3]} V10
+place_ports {switches[2]} U11
+place_ports {switches[1]} U12
+place_ports {switches[0]} H6
+place_ports {leds[15]} V11
+place_ports {leds[14]} V12
+place_ports {leds[13]} V14
+place_ports {leds[12]} V15
+place_ports {leds[11]} T16
+place_ports {leds[10]} U14
+place_ports {leds[9]} T15
+place_ports {leds[8]} V16
+place_ports {leds[7]} U16
+place_ports {leds[6]} U17
+place_ports {leds[5]} V17
+place_ports {leds[4]} R18
+place_ports {leds[3]} N14
+place_ports {leds[2]} J13
+place_ports {leds[1]} K15
+place_ports {leds[0]} H17
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list enter_btn]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list override]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset_btn]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {digits[7]} {digits[6]} {digits[5]} {digits[4]} {digits[3]} {digits[2]} {digits[1]} {digits[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {digits[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {digits[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {digits[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {leds[15]} {leds[14]} {leds[13]} {leds[12]} {leds[11]} {leds[10]} {leds[9]} {leds[8]} {leds[7]} {leds[6]} {leds[5]} {leds[4]} {leds[3]} {leds[2]} {leds[1]} {leds[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {segments[6]} {segments[5]} {segments[4]} {segments[3]} {segments[2]} {segments[1]} {segments[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {switches[3]} {switches[2]} {switches[1]} {switches[0]}]]
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+write_schematic -format pdf -orientation portrait {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR/schematic.pdf}
+write_schematic -format pdf -orientation portrait -force {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR/schematic.pdf}
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+close [ open {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/tone.vhd} w ]
+add_files {{C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/tone.vhd}}
+update_compile_order -fileset sources_1
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list tone_out]]
+refresh_design
+update_compile_order -fileset sources_1
+remove_files  {{C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.srcs/sources_1/new/tone.vhd}}
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR2/project_1/project_1.runs/impl_1/lock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+refresh_design
+write_schematic -format pdf -orientation landscape {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR/schematic.pdf}
+write_schematic -format pdf -orientation portrait -force {C:/Users/TUF/Desktop/Kuliah/SEM 3/DIG SYS/TR/schematic.pdf}
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
